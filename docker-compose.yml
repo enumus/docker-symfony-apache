@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+  apache:
+    build: apache
+    image: enumus/ubuntu-apache:latest
+    container_name: app
+    ports:
+      - 80:80
+    volumes:
+      - ../:/app
